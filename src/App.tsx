@@ -11,6 +11,9 @@ function App() {
     let [ratingValue, setRatingValue] = useState<RatingValueType>(0)
     let [accordionCollapsed, setAccordionCollapsed] = useState<boolean>(false)
     let [on, setOn] = useState(false)
+    const onClick = () => {
+
+    }
 
     return (
         <div className={'App'}>
@@ -25,7 +28,9 @@ function App() {
 
             <Accordion titleValue={"Menu"}
                        collapsed={accordionCollapsed}
-                       setAccordionCollapsed={setAccordionCollapsed}/>
+                       setAccordionCollapsed={setAccordionCollapsed}
+                       items={[]}
+                       onClick={onClick}/>
 
 
 
