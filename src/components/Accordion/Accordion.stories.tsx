@@ -12,7 +12,9 @@ const callBack = action('accordion mode change event fired');
 const onClickCallBack = action('some item was clicked');
 
   
-const Template: Story<AccordionPropsType> = (args) => <Accordion {...args}/>
+const Template: Story<AccordionPropsType> = (args) => {
+    return <Accordion {...args}/>
+}
 
 export const MenuCollapsedMode = Template.bind({});
 MenuCollapsedMode.args = {
@@ -33,6 +35,7 @@ UsersUncollapsedMode.args = {
             {title: 'Valera', value: 2},
             {title: 'Artem', value: 3},
             {title: 'Viktor', value: 4}]
+
 }
 
 
